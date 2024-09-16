@@ -1,0 +1,59 @@
+@use '../common/variable' as *;
+
+.chatroom {
+    height: 100vh;
+    display: flex;
+
+    &__col {
+        height: 100%;
+    }
+
+    &__sidebar {
+        height: 100%;
+        padding: 15px 0;
+        background: #611F69;
+        width: 25%;
+    }
+
+    &__chatwindow {
+        width: 75%;
+    }
+}
+
+.chatwindow {
+    height: 100%;
+
+    &__header {
+        height: $header-chat-height;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0 15px;
+        display: flex;
+
+        &-container {
+            width: 100%;
+        }
+    }
+
+
+
+    &__main {
+        height: calc(100% - #{$header-chat-height});
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px 15px;
+
+        &__messages {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    &__editor {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+
+}

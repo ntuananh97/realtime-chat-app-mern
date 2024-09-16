@@ -1,0 +1,35 @@
+.chat-message {
+    &__list {
+        overflow-y: auto;
+        max-height: 100%;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__item {
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &.me {
+            justify-content: flex-end;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &__date {
+            font-size: 13px;
+            color: gray;
+        }
+
+        &__content {
+            font-size: 15px;
+            color: #000;
+        }
+    }
+}

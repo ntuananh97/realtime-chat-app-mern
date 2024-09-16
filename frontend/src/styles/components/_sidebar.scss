@@ -1,0 +1,15 @@
+.sidebar {
+    &__space {
+        padding: 0 15px;
+    }
+}
+
+.room-list {
+    &__title {
+        color: white;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+}

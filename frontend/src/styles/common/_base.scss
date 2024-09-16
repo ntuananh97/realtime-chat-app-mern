@@ -1,0 +1,23 @@
+@use '../mixins' as *;
+
+* {
+    box-sizing: border-box
+}
+
+.center-position {
+    @include center-by-position;
+}
+.c-b-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.c-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-normal-flex {
+    display: flex;
+    align-items: center;
+}
