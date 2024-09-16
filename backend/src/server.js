@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const connectDb = require("./configs/connectDb");
 const routes = require("./routes");
 const integrateSwagger = require("./configs/swaggerConfig");
+const process = require("process"); // Add this line to import the 'process' module
 
 const app = express();
 const server = http.createServer(app); // thiết lập socket io cho sau này
@@ -35,9 +36,6 @@ const startApp = () => {
         console.log("Server is running in port: " + `http://localhost:${port}`);
     });
 }
-
-
-
 
 ;(async () => {
     try {
